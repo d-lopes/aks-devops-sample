@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '11fb1844-6c2d-4513-b9aa-85ac61ec29e2'
-  imageRepository: 'dlopesdevopssample'
+  imageRepository: 'dlopes/devops-sample'
   containerRegistry: 'akscoursedl.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
