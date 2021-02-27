@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: dlopesdevopssample 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dlopesdevopssample
+  template:
+    metadata:
+      labels:
+        app: dlopesdevopssample 
+    spec:
+      containers:
+        - name: dlopesdevopssample 
+          image: akscoursedl.azurecr.io/dlopesdevopssample
+          ports:
+          - containerPort: 80
